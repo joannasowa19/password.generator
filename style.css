@@ -1,0 +1,26 @@
+.body {
+  background-color: lavender;
+}
+
+.btn {
+  border-radius: 6px;
+  color: white;
+  padding: 6px;
+  background-color: darkolivegreen;
+}
+
+.btn-active {
+  background-color: darkolivegreen;
+}
+
+.btn:hover {
+  background-color: lavenderblush;
+  color: darkgrey;
+}
+
+.password {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: darkslategray;
+  padding: 5vh 2vh;
+}

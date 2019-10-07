@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <!-- make sure to link to a css file -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
-  <body>
+  <body class="body">
     <!-- box to show password -->
-    <div id="pwBox">password</div>
+    <div class="password" id="pwBox">Password</div>
     <!-- button to generate -->
-    <button onclick="createPassword()">generate</button>
+    <button class="btn" onclick="createPassword()">Generate</button>
     <!-- button copy to clipboard -->
-    <button>copy</button>
+    <button class="btn">Copy</button>
     <!-- external js -->
     <script src="./app.js"></script>
   </body>
