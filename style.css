@@ -6,11 +6,11 @@
   border-radius: 6px;
   color: white;
   padding: 6px;
-  background-color: darkolivegreen;
+  background-color: gray;
 }
 
 .btn-active {
-  background-color: darkolivegreen;
+  background-color: gray;
 }
 
 .btn:hover {
@@ -18,9 +18,17 @@
   color: darkgrey;
 }
 
+.container {
+  justify-content: center;
+  align-content: center;
+  border: dotted lavenderblush;
+  margin: 10vh 10vw;
+  padding: 10vh 10vw;
+}
+
 .password {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  color: darkslategray;
+  color: gray;
   padding: 5vh 2vh;
 }
