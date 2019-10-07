@@ -1,10 +1,36 @@
-var pw = "generator";
-var symbols = ["!", "@", "#", "$"];
-var letters = ["a", "b", "c", "d", "e", "f"];
-var pwLen = prompt("What is your password length?");
+var pw = [];
+var letters = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z"
+];
+var symbols = ["!", "@", "#", "$", "%"];
+var pwLength = prompt("What is your password length?");
 var isSymbols = true;
-
-document.write(pw);
+var isNumbers = true;
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -26,33 +52,24 @@ function shuffle(array) {
   return array;
 }
 
-// Used like so
-var arr = [2, 11, 37, 42];
-arr = shuffle(arr);
-console.log(arr);
-
-// defined function
-
+// defined function //
 function createPassword() {
-  for (i = 0; i < pwLen; i++) {
+  for (i = 0; i < pwLength; i++) {
     if (isSymbols === true && i === 0) {
-      var randomNo = Math.floor(Math.random() + symbols.length);
-      // inject symbol in the string
-      pw = pw.push(symbols[randomSymNo]);
+      var randomSymNo = Math.floor(Math.random() * symbols.length);
+      // inject a symbol in the string //
+      pw.push(symbols[randomSymNo]);
     } else {
-      // inject a letter into the string
-      var randomNo = Math.floor(Math.random() + letters.length);
-      pw = push(letters[randomNo]);
+      // inject a letter into the string//
+      var randomNo = Math.floor(Math.random() * letters.length);
+      pw.push(letters[randomNo]);
     }
-    // need to still add if statement for numbers
   }
-
-  // randomize array
+  // randomize array //
   pwShuffle = shuffle(pw);
   pwBox.innerHTML = pw.toString();
 }
 
-// first event
-genBtn.addEventListener("click", create);
+// first event //
 // change this pw into a dynamic random pw
 // document.write(pw);
